@@ -12,7 +12,7 @@ var srcsetPolyfill = {
     var sources = srcset.split(',');
     for(var i = 0; i < sources.length; i++){
       if(srcsetPolyfill.checkFor2x(sources[i])){
-        image.setAttribute('src', sources[i].trim().replace(' 2x','').trim());
+        image.setAttribute('src', sources[i].trim().replace(' 2x',''));
       }
     }
   },
