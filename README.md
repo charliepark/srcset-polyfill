@@ -6,7 +6,7 @@ A really simple, pretty tiny, dependency-free polyfill for serving higher-res fi
 
 You're not alone. Currently, both Firefox and IE have trouble with it as well. Safari is a little fussy, but gets it right where it counts. Chrome's fine.
 
-## So what is this?
+### `srcset` in your code
 
 This is a tiny bit of code that helps older browsers load higher-res graphics. The assumption this code makes is that you have an image file referenced in the HTML of your site that uses the `srcset` attribute.
 
@@ -26,7 +26,7 @@ That "2x" on the end there tells the browser "if you're on a retina device (with
 
 Chrome and Safari can both handle that added attribute with no problem. Firefox and IE, though, don't know what to do. This is for them.
 
-## How do I use it?
+## So what does this JS do? How do I use it?
 
 Just add the code in srcsetpolyfill.js to the JS on your site, and call it once your page has loaded, with `srcsetPolyfill.run();`. If the viewer is on a retina device, the JS will look through every `<img>` file on your page and, if the image has a 2x version (as defined in the srcset), it will replace the `src` attribute's value with the 2x value.
 
