@@ -2,6 +2,8 @@
 
 A really simple, pretty tiny, dependency-free polyfill for serving higher-res files to retina devices when using browsers that are confused by `srcset`.
 
+It's not a framework. It's not a library. It's just a few lines of vanilla JavaScript.
+
 ## Are _you_ confused by srcset?
 
 You're not alone. Currently, both Firefox and IE have trouble with it as well. Safari is a little fussy, but gets it right where it counts. Chrome's fine.
