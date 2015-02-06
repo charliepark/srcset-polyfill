@@ -19,7 +19,7 @@ Where you normally would have written:
 You now have this:
 
 ```
-<img alt="A eucalyptus tree, in the woods." src="tree.jpg" srcset="tree.jpg, tree_2x.jpg 2x">
+<img alt="A eucalyptus tree, in the woods." src="tree.jpg" srcset="tree_2x.jpg 2x">
 ```
 
 That "2x" on the end there tells the browser "if you're on a retina device (with pixels at 2x the single-axis-density of a normal screen), use _this_ image instead of the one that doesn't have a 2x". (If you have an even larger version of tree.jpg, you can do the same with "3x".) You will want your 2x assets to have the same height:width ratio as your 1x assets, of course, so things don't squash.
